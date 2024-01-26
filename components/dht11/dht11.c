@@ -65,7 +65,7 @@ static double get_float_by_int(uint8_t front, uint8_t back)
     sscanf(observable, "%lf", &f);
     return f;
 }
-uint8_t dht_read_data(gpio_num_t pin, double *humidity, double *temperature)
+uint8_t dht_read_data(gpio_num_t pin, float *humidity, float *temperature)
 {
     DHT11_PIN = pin;
     DHT11_Init();
